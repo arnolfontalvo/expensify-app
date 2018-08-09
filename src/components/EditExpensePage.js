@@ -1,10 +1,12 @@
+/*jslint node: true */
+/*jshint -W079 */
+'use strict';
+
 import React from 'react';
 
 const EditExpensePage = (props) => {
   return (
-    <div>
-      Editing the expense with id of {props.match.params.id}
-    </div>
+    <div>Editing the expense with id of {props.match.params.id}</div>
   );
 };
 

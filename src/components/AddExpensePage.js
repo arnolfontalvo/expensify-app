@@ -1,3 +1,7 @@
+/*jslint node: true */
+/*jshint -W079 */
+'use strict';
+
 import React from 'react';
 
 const AddExpensePage = () => (
