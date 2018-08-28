@@ -1,4 +1,40 @@
-import { createStore, combineReducers} from 'redux';
+/*jslint node: true */
+/*jshint -W079 */
+'use strict';
+
+import { createStore, combineReducers } from 'redux';
+
+const expensesReducerDefaultState = [];
+
+const expensesReducer = (state = expensesReducerDefaultState, action) => {
+  switch (action.type) {
+    default:
+      return state;
+  };
+};
+const filterReducerDefaultState = {
+  text: '',
+  sortBy: 'date',
+  startDate: undefined,
+  endDate: undefined
+
+}
+
+const filtersReducer = (state = filterReducerDefaultState, action) => {
+  switch (action.type) {
+    default:
+      return state;
+  };
+};
+
+const store = createStore(
+  combineReducers({
+    expenses: expensesReducer,
+    filters: filtersReducer
+  })
+);
+
+console.log(store.getState());
 
 const demoState = {
   expenses: [{
