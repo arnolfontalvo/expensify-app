@@ -1,12 +1,15 @@
+import moment from 'moment'
 /*jslint node: true */
 /*jshint -W079 */
 'use strict';
 
+
+
 const filterReducerDefaultState = {
   text: '',
   sortBy: 'date',
-  startDate: undefined,
-  endDate: undefined
+  startDate: moment().startOf('month'),
+  endDate: moment().endOf('month'),
 
 }
 
