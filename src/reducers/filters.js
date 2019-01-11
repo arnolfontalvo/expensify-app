@@ -1,9 +1,8 @@
-import moment from 'moment'
 /*jslint node: true */
 /*jshint -W079 */
 'use strict';
 
-
+import moment from 'moment';
 
 const filterReducerDefaultState = {
   text: '',
